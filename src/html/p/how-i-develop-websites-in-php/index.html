@@ -14,8 +14,8 @@
 })
 
 			<div class="container--post">
-				<h1>Как я разрабатываю сайты на PHP</h1>
-				<p class="post--start-p">A small guide.</p>
+				<h1>我如何在PHP中开发网站</h1>
+				<p class="post--start-p">一个小向导。</p>
 			</div>
 
 			<figure class="post--start-img text-center">
@@ -29,191 +29,191 @@
 
 			<div class="container--post">
 				<p>
-					For 3 years of active project development in a web environment for
-					personal for use and for people to order, I have brought out some form
-					of convenient sorting the project. I decided to tell people about it,
-					as I will be soon change the development style.
+					在web环境中进行3年的积极项目开发
+					个人使用，供人们订购，我带出了某种形式
+					便于对项目进行排序。 我决定告诉人们这件事,
+					因为我很快就会改变发展风格。
 				</p>
-				<h3>Structuring the project</h3>
+				<h3>构建项目</h3>
 				<p>
-					First of all, it is necessary to understand the structure of the
-					project. For a while I I used long names, understandable, but because
-					of them the URL can lengthen. Now I prefer incomprehensible folders in
-					the spirit of "a", "f", "db" and so on.
-				</p>
-				<p>
-					At the root I keep .htaccess, which described the link to page 404,
-					403 and the rules that remove the extension.php from the URL.
+					首先，有必要了解
+					工程。 有一段时间我用长名字，可以理解，但因为
+					其中URL可以加长。 现在我更喜欢在不可理解的文件夹
+					精神的"a"、"f"、"db"等。
 				</p>
 				<p>
-					I also keep the "i" folder in the root - here is All additional for
-					the site: fonts, styles, scripts and images. There are 4 folders in
-					the "i" folder: "a", "css", "img", "php".
+					在根我保持。htaccess，其中描述了页面404的链接,
+					403和删除扩展名的规则。url中的php。
 				</p>
 				<p>
-					Let's start from the end. The "php" folder has 2 folders inside it:
-					"c" and "m". Folder "c" is an abbreviation of the word component -
-					parts of the site are stored here: footer, header, head and other
-					styles described in advance. I'm taking out the blocks in modules, as
-					it happens in ReactJS due to usability.
+					我也将"i"文件夹保留在根目录中-这里是所有额外的
+					该网站：字体，样式，脚本和图像。 有4个文件夹在
+					"i"文件夹："a"，"css"，"img"，"php"。
 				</p>
 				<p>
-					Folder "m" is an abbreviation of the word module - handlers are stored
-					here events. For example, here I store the script rb-mysql.php ,
-					allowing convenient access the database and the handlers that I refer
-					to in the forms or links.
+					让我们从头开始。 "Php"文件夹内有2个文件夹:
+					"c"和"m"。 文件夹"c"是单词component的缩写 -
+					网站的部分存储在这里：页脚、页眉、页眉和其他
+					预先描述的样式。 我正在取出模块中的块，作为
+					由于可用性，它发生在ReactJS中。
 				</p>
 				<p>
-					The "img" folder stores images. Everything is simple here, the "logo"
-					folder for logos and other necessary folders, divided by site
-					categories.
+					文件夹"m"是单词模块的缩写-处理程序存储
+					这里的事件。 例如，这里我存储脚本rb-mysql。php的 ,
+					允许方便地访问数据库和我引用的处理程序
+					在表格或链接中。
 				</p>
 				<p>
-					The "css" folder stores the CSS styles of my site. At the root I store
-					a file app.css, in which I connect other CSS files using @import. Such
-					the option allows me to fully work in 1 folder created for CSS styles
-					and do not change the structure of the project in its other parts,
-					thereby complicating things.
+					"Img"文件夹存储图像。 这里一切都很简单，"标志"
+					徽标和其他必要文件夹的文件夹，按站点划分
+					类别。
 				</p>
 				<p>
-					The convenience of storing styles in one folder is also justified by
-					using this option to change the topic. Together with the app.css file
-					there are 2 files in the root of the "css" folder: light.css,
-					dark.css. In two these files describe the colors that I use in the
-					project. In depending on the current topic, I connect the necessary
-					file, which, in the case of what, will change the colors on the site.
-					Thus, there is a change of theme on the site.
+					"Css"文件夹存储我的网站的CSS样式。 在根我存储
+					一个文件应用程序。css，其中我使用@import连接其他CSS文件。 这样的
+					该选项允许我在为CSS样式创建的1文件夹中完全工作
+					并且不要改变项目在其他部分的结构,
+					从而使事情复杂化。
 				</p>
 				<p>
-					And the most interesting thing is the folder "a" - an abbreviation of
-					the word another. More often Allgo here I store all the "garbage",
-					without which it is impossible to do. I rarely change files and
-					folders stored in folder "a". That's why I moved these files and
-					folders to folder "a". For example, in folder "a" I store Bootstrap
-					styles, fonts, JavaScript code, and database saves. In in which case,
-					you can expand the number of files stored here and integrate other
-					solutions needed for the project.
-				</p>
-				<h3>Auxiliary files needed for a high-quality website</h3>
-				<p>
-					But just folders and PHP files will not work. Yes, you can create an
-					excellent, optimized with good accessibility website. But in addition
-					to having page files, auxiliary files are also needed, describing the
-					site. An ordinary person will not read these files, he they are not
-					interests. These files are needed for search engine robots that they
-					will check your site and go through it.
+					将样式存储在一个文件夹中的便利性也是合理的
+					使用此选项更改主题。 与应用程序一起。css文件
+					"css"文件夹的根目录中有2个文件：light。css,
+					黑暗。css。 在两个文件中，这些文件描述了我在
+					工程。 在根据当前主题，我连接必要的
+					文件，其中，在什么情况下，将改变网站上的颜色。
+					因此，网站上的主题发生了变化。
 				</p>
 				<p>
-					The first file parsed above is .htaccess. It is needed in order, for
-					example, to change the format of the URL display. Also.htaccess allows
-					you to perform other actions, which can be found in the internet.
+					而最有趣的是文件夹"a"-的缩写
+					另一个世界。 更多的时候Allgo在这里我存储所有的"垃圾",
+					没有它是不可能做到的。 我很少更改文件和
+					文件夹"a"中存储的文件夹。 这就是为什么我移动这些文件和
+					文件夹到文件夹"a"。 例如，在文件夹"a"我存储Bootstrap
+					样式、字体、JavaScript代码和数据库保存。 在这种情况下,
+					您可以扩展存储在这里的文件数量，并集成其他
+					项目所需的解决方案。
+				</p>
+				<h3>高质量网站所需的辅助文件</h3>
+				<p>
+					但只是文件夹和PHP文件将无法正常工作。 是的，你可以创建一个
+					优秀,优化与良好的无障碍网站. 但除此之外
+					要拥有页面文件，还需要辅助文件，描述
+					网站。 一个普通人不会阅读这些文件，他他们不是
+					利益。 这些文件是搜索引擎机器人所需要的。
+					将检查您的网站并通过它。
 				</p>
 				<p>
-					File sitemap.xml contains the "code" in XML format. This file stores
-					All the pages of the site, their priority, the time of the last page
-					changes and the frequency of changes to a specific page. To for
-					example, you can view this file at creagoo.ru/sitemap.xml.
+					上面解析的第一个文件是。htaccess的。 它是需要的，为了
+					例如，更改URL显示的格式。 还有。htaccess允许
+					您可以执行其他操作，这可以在互联网上找到。
 				</p>
 				<p>
-					There is also a file robots.txt . It stores information for search
-					engine robots. Link to the sitemap and various information for robots,
-					for example, which paths are available for traversal and which are
-					not.
+					文件站点地图。xml包含XML格式的"代码"。 此文件存储
+					网站的所有页面，它们的优先级，最后一页的时间
+					变化以及特定页面的变化频率。 为
+					例如，您可以在以下位置查看此文件creagoo.ru/sitemap.xml...
 				</p>
 				<p>
-					You should also store the icon.ico file. This file in the address bar
-					it will allow you to display a small image-the site logo. Most often
-					Allgo this file is needed for the uniqueness of the page in the
-					output.
+					还有一个文件机器人。txt的。 它存储用于搜索的信息
+					引擎机器人。 链接到站点地图和机器人的各种信息,
+					例如，哪些路径可用于遍历，哪些路径可用于遍历
+					不是。
 				</p>
 				<p>
-					We will not delete the file, but All the same, to add additional
-					uniqueness the pages can use an accent color. A style is added to the
-					head with the name "theme-color" and in content the color value in
-					HTML format. As far as I know, Safari browser reads this information
-					and displays in the header.
+					您还应该存储图标。ico文件。 这个文件在地址栏
+					它将允许您显示一个小图像-网站徽标。 最常见的
+					所有去这个文件是需要的页面的唯一性在
+					输出。
 				</p>
 				<p>
-					For example, you can use an RSS file for a media site. Into it
-					information about the pages is recorded. If you look at media sites,
-					you will see a link to the RSS feed in footer. This is a file that
-					stores some records. Often this RSS file can be connected for some
-					social network. the network so that it displays your latest pages.
-				</p>
-				<h3>"Pure" PHP or Laravel</h3>
-				<p>
-					We have disassembled the structure of the site, looked at how it
-					should be store project files. Now let's figure out which option
-					should should I just use PHP or the Laravel framework?
+					我们不会删除该文件，但都是一样的，添加额外的
+					独特性页面可以使用强调色。 样式被添加到
+					标题名称为"主题-颜色"，内容中的颜色值为
+					HTML格式。 据我所知，Safari浏览器读取此信息
+					并显示在标题中。
 				</p>
 				<p>
-					I will inform you that the broadcast opinion is purely my personal
-					experience. If Your experience is different - that's great.
+					例如，您可以使用媒体网站的RSS文件。 进入它
+					页的信息进行记录。 如果你看媒体网站,
+					您将在页脚中看到RSS提要的链接。 这是一个文件，
+					存储一些记录。 通常这个RSS文件可以连接一些
+					社交网络。 网络，以便它显示您的最新页面。
+				</p>
+				<h3>"纯"PHP或Laravel</h3>
+				<p>
+					我们已经拆卸了网站的结构，看看它是如何
+					应存储项目文件。 现在让我们弄清楚哪个选项
+					我应该只使用PHP还是Laravel框架？
 				</p>
 				<p>
-					I started creating my first website with pure PHP. The concept "pure
-					PHP" means that the PHP programming language is used and nothing more.
-					Development is a bit difficult because dependencies are tracked
-					independently. There is no possibility integrate some solutions into
-					your project.
+					我会通知你，广播意见纯粹是我个人的
+					经验。 如果你的经验是不同的-这是伟大的。
 				</p>
 				<p>
-					Laravel seems to solve these problems. Allows you to write websites
-					cooler. But, for the sake of truth, I couldn't really understand the
-					meaning of Laravel for usage. Yes, tests are integrated into it,
-					personally I don't use them I use it, I have enough of my own testing
-					because of the small size sites.
+					我开始用纯PHP创建我的第一个网站。 "纯粹"的概念
+					PHP"意味着使用PHP编程语言，仅此而已。
+					开发有点困难，因为依赖关系被跟踪
+					独立的。 没有可能将一些解决方案集成到
+					你的项目。
 				</p>
 				<p>
-					Laravel allows you to share responsibility on the site: backend and
-					frontend. Allows you to include files in your project. Create
-					multilingual sites. Access the database. Solve problems faster.
+					Laravel似乎解决了这些问题。 允许您编写网站
+					冷却器。 但是，为了真理，我不能真正理解
+					Laravel的用法。 是的，测试被集成到其中,
+					就我个人而言，我不使用它们，我使用它，我有足够的自己的测试
+					因为小规模的网站。
 				</p>
 				<p>
-					But my experience of using Laravel was associated only with pain.
-					After every day my project stopped working. I started with more a
-					later version of Laravel. Reinstalled, but there were still some
-					problems and eternal mistakes, because of which my project did not
-					start.
+					Laravel允许您在网站上分担责任：后端和
+					前端。 允许您在项目中包含文件。 创建
+					多语言网站。 访问数据库。 更快地解决问题。
 				</p>
 				<p>
-					I didn't like fixing problems forever. The whole point is this: after
-					the introduction of the new solution, I quietly launched the project.
-					But after some time, instead of starting, my console displayed
-					mistakes. I work on the project on the workstation, after I have not
-					changed or deleted anything from the Laravel project.
+					但我使用Laravel的经验只与疼痛有关。
+					每天之后，我的项目停止工作。 我从更多的a开始
+					Laravel的更高版本。 重新安装，但仍然有一些
+					问题和永恒的错误，因为我的项目没有
+					开始吧。
 				</p>
 				<p>
-					Also, publishing the Laravel project to the server is incredibly
-					difficult: you need to change dependencies, files. It was absolutely
-					incomprehensible to me, how can I conveniently upload the project to
-					the server. The lack of hospitality and pushed me away from using
-					Laravel.
-				</p>
-				<h3>Programming language for processing backend requests</h3>
-				<p>
-					I decided to choose the PHP programming language for processing
-					backend requests. The choice was made for a very simple reason: this
-					the programming language has been developing for a long time, it has
-					within itself good technological solutions that simplify development,
-					for this the programming language has written quite a few frameworks
-					that can use. And in general, I like this programming language.
+					我不喜欢永远解决问题。 整点是这样的：之后
+					引入新的解决方案，我悄悄地启动了该项目。
+					但一段时间后，而不是启动，我的控制台显示
+					错误。 我在工作站上的项目工作，之后我还没有
+					更改或删除Laravel项目中的任何内容。
 				</p>
 				<p>
-					In fact, you can use any language you are interested in Programming
-					languages: Python, C++, Rust. I don't think it's that important. Only
-					if you are not creating a resource with high user turnover or a
-					narrower sphere of use.
+					此外，将Laravel项目发布到服务器是令人难以置信的
+					困难：您需要更改依赖项，文件。 这绝对是
+					我无法理解，我怎样才能方便地将项目上传到
+					的服务器。 缺乏热情好客，使我远离使用
+					拉维尔。
+				</p>
+				<h3>用于处理后端请求的编程语言</h3>
+				<p>
+					我决定选择PHP编程语言进行处理
+					后端请求。 选择是出于一个非常简单的原因：这
+					编程语言已经发展了很长一段时间，它已经
+					内部良好的技术解决方案，简化开发,
+					为此，编程语言编写了不少框架
+					这可以使用。 而在一般情况下，我喜欢这种编程语言。
 				</p>
 				<p>
-					In conclusion, I would like to highlight the advantages of PHP: I use
-					it for modularity of my project, as a backend handler. With the help
-					PHP can be given the ability to manage GET requests and work with
-					forms.
+					事实上，你可以使用任何你对编程感兴趣的语言
+					语言：Python，C++，Rust。 我觉得没那么重要 只有
+					如果您没有创建具有高用户流失率的资源或
+					使用范围更窄。
 				</p>
 				<p>
-					Use what you like the most and is suitable for the solution tasks.
-					Good luck!
+					最后，我想强调PHP的优点：我使用
+					它是为了我的项目的模块化，作为后端处理程序。 在帮助下
+					PHP可以被赋予管理GET请求和使用的能力
+					表格。
+				</p>
+				<p>
+					使用您最喜欢的，适合解决方案任务的内容。
+					祝你好运！
 				</p>
 			</div>
 
